@@ -2,7 +2,9 @@
 
 import Link from 'next/link';
 import Reservation from './components/Reservation';
-
+import PopularDishes from './components/PopularDishes';
+import AboutUs from './components/AboutUs';
+import Menu from './components/Menu';
 
 export default function Home() {
   return (
@@ -14,10 +16,10 @@ export default function Home() {
 
         {/* Navbar */}
         <nav className="absolute top-0 left-0 w-full flex justify-center space-x-10 p-6 text-white z-20 uppercase tracking-widest text-sm">
-          <Link href="#" className="hover:underline">Home</Link>
-          <Link href="#" className="hover:underline">About</Link>
-          <Link href="#" className="hover:underline">Contact</Link>
-          <Link href="#" className="hover:underline">Chefs</Link>
+          <Link href="#" className="hover:underline">Acceuil</Link>
+          <Link href="#" className="hover:underline">A Propos</Link>
+          <Link href="#" className="hover:underline">Contacte</Link>
+          <Link href="#" className="hover:underline">Menus</Link>
         </nav>
 
         {/* Center Content */}
@@ -35,10 +37,14 @@ export default function Home() {
 
       {/* Reservation Section */}
       <Reservation />
-     
-      
-    </div>
-    
-  );
+
   
+
+      {/* Popular Dishes Section */}
+     <PopularDishes />
+
+     <AboutUs />
+     <Menu  />
+    </div>
+  );
 }
